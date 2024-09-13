@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kotak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"], 
+        input[type="date"], 
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"], 
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pemisah -->
+    <hr>
+
+    <!-- Bagian Belajar Membuat Form -->
+    <h1> Biodata </h1>
+    <form action="">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br>
+        
+        <label for="tlahir">Tempat Lahir:</label>
+        <input type="text" id="tlahir" name="tlahir"><br>
+        
+        <label for="tglahir">Tanggal Lahir:</label>
+        <input type="date" id="tglahir" name="tglahir"><br>
+        
+        <label for="Sekolah"> SMK/SMA:</label>
+        <select id="SEKOLAH" name="SEKOLAH">
+            <option value="SMA PERJUANGAN TERPADU">SMA PERJUANGAN TERPADU</option>
+            <option value="LOGOS">LOGOS</option>
+            <option value="SMKNTD">SMK AL MUHTADIN</option>     
+            <option value="SMANDA">SMA 3 DEPOK</option>
+            <option value="TJ">SMK TEKNINDO JAYA</option>
+        </select><br>
+        
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jk" value="laki-laki">
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jk" value="perempuan">
+        <label for="perempuan">Perempuan</label><br>
+        
+        <label>Hobi:</label>
+        <input type="checkbox" id="baca" name="hobi" value="baca">
+        <label for="baca">Baca</label>
+        <input type="checkbox" id="nulis" name="hobi" value="Makan">
+        <label for="Makan">Makan</label>
+        <input type="checkbox" id="traveling" name="hobi" value="Berenang">
+        <label for="traveling">Berenang</label>
+        <input type="checkbox" id="mancing" name="hobi" value="Masak">
+        <label for="mancing">Masak</label>
+        <input type="checkbox" id="tidur" name="hobi" value="tidur">
+        <label for="tidur">Tidur</label><br>
+        
+        <hr>
+        <input type="submit" value="Simpan">
+    </form>
+
+</body>
+</html>

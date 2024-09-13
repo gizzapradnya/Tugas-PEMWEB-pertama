@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Misgi</title>
+    <style>
+        /* Overall body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif; /* Font to Times New Roman */
+            background-color: #e8dbd0; /* Light brown color (coklat susu muda) */
+            color: black; /* Text color to black */
+        }
+
+        /* Logo container styling */
+        .logo-container {
+            position: relative;
+            padding: 5px 10px 20px; /* Space around logo and line */
+        }
+
+        /* Logo styling */
+        .logo {
+            font-size: 60px; /* Moderate logo font size */
+            font-weight: bold;
+            color: black; /* Logo color to black */
+            font-family: 'Times New Roman', serif; /* Ensure logo font is Times New Roman */
+            position: relative;
+            z-index: 1; /* Ensure the logo is above the line */
+        }
+
+        /* Line separator styling */
+        .separator {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 4px solid black; /* Line color to black */
+            z-index: 0; /* Ensure the line is below the logo */
+        }
+
+        /* Profile content styling */
+        .profile-info {
+            padding: 50px;
+            margin-top: 30px; /* Space from the line */
+            margin-left: 20px;
+            max-width: 1200px; /* Adjusted width to accommodate larger content */
+            display: flex;
+            align-items: center;
+            font-family: 'Times New Roman', serif; /* Ensure profile text font is Times New Roman */
+        }
+
+        /* Image styling */
+        .profile-info img {
+            border-radius: 20px; /* Slightly larger border-radius for a proportional look */
+            margin-right: 40px; /* Increased space between image and text */
+            width: 400px; /* Image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Paragraph text styling */
+        .profile-info p {
+            margin: 0;
+            font-size: 36px; /* Font size for the text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Container with Line Separator -->
+    <div class="logo-container">
+        <div class="logo">PW</div>
+        <div class="separator"></div>
+    </div>
+
+    <!-- Profile Information -->
+    <div class="profile-info">
+        <img src="assets/Misgi.JPG" alt="Misgi">
+        <p>
+            Nama               :Misgi Rahayu <br>
+            Tanggal/Bulan Lahir:23 November 2004 <br>
+            Jenis Kelamin      : Perempuan <br>
+            Hobi               :Bersepeda<br>
+            Gmail              :Misgirahayu23@gmail.com<br>
+        </p>
+    </div>
+</body>
+</html>
